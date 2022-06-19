@@ -1,0 +1,153 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+.calc {
+  width: 300px;
+  height: 500px;
+  border: 0px solid #041615;
+  border-radius: 20px;
+  background: #041615;
+  margin: 50px auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  box-shadow: 5px 5px 5px #4f4f4f;
+}
+.calc__screen {
+  width: 300px;
+  height: 150px;
+  background-color: #082c2a;
+  border: 0px solid #082c2a;
+  border-radius: 20px;
+  font-size: 40px;
+  display: grid;
+  justify-items: end;
+  align-items: center;
+}
+.calc__screen p {
+  text-align: right;
+  padding-right: 1.5px;
+  max-width: 300px;
+  max-height: 100px;
+  overflow-wrap: break-word;
+}
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #022524;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  user-select: none;
+}
+.btn:hover {
+  filter: brightness(130%);
+}
+.btn:active {
+  border-radius: 20%;
+  transition-duration: 500ms;
+}
+.bg-white {
+  background: rgb(235, 229, 229);
+  color: black;
+  font-size: 25px;
+}
+.bg-white:hover {
+  filter: brightness(100%);
+  background: #b1f5f3;
+}
+.bg-lightgreen {
+  background: #169793;
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+}
+.bg-green {
+  background: #1fd6d0;
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin-top: 10px;
+  margin-bottom: 7.5px;
+  grid-gap: 7.5px;
+}
